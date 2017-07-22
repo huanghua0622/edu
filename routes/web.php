@@ -22,5 +22,7 @@ Route::group(['prefix'=>'admin','namespace'=>'Admin'],function(){
         Route::get('dashboard','DashboardController@index');
         Route::get('welcome','DashboardController@welcome');
         Route::get('logout','DashboardController@logout');
+        Route::get('admin','AdminController@index');
+        Route::post('data','AdminController@data');
     });
 });
